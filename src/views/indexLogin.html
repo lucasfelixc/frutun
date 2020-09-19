@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutun</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/includes/homeLogin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body id="pageIndex">
+
+    <div id="container">
+        <header class="logoFrutun">
+            <img src="/images/frutun.svg" alt="Logo frutun">
+        </header>
+
+        <main class="mainPage">
+            <div class="pageLogin">
+                <form id="formLogin" action="/execute-login" method="POST">
+                    <div>
+                        <input type="text" class="user" placeholder="Usuário">
+                    </div>
+    
+                    <div>
+                        <input type="password" class="password" placeholder="Senha">
+                    </div>
+
+                    <a type="submit" href="./initialPage.html">Entrar</a>
+                </form>
+            </div>
+    
+            <footer class="pageFooter">
+                <p>Não possui cadastro? <a href="/indexRegister.html">Registre-se</a> </p>
+            </footer>
+        </main>
+        
+    </div>
+    
+</body>
+</html>

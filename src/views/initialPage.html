@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/includes/initialPage.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body id="pageIndex">
+
+    <div id="container">
+        <!-- <a href="/"><img src="/images/align-justify.svg" alt="Opções"></a> -->
+        <input type="checkbox" id="check">
+        <label for="check" id="options">
+            <img src="/images/align-justify.svg" alt="Opções">
+        </label>
+
+        <div class="optionsBar">
+            <ul>
+                <li><a href="./initialPage.html"><img src="/images/clock.svg" alt="Relógio">Temporizador</a></li>
+                <li><a href="/"><img src="/images/server.svg" alt="Histórico">Histórico</a></li>
+            </ul>
+        </div>
+        
+        <div class="initialLanding">
+            <h1>Defina algumas preferências</h1>
+
+            <div class="btn timeInput">
+                <input type="number" name="time" id="" placeholder="Minutos">
+            </div>
+
+            <div class="line">
+                <img src="/images/line.svg" alt="linha">
+            </div>
+
+            <div class="btn freeTime">
+                <button class="freeTime">Tempo livre</button>
+            </div>
+
+            <input type="checkbox" id="intervals">
+            <label class="labelIntervals" for="intervals">
+                <img src="/images/plus.svg" alt="Plus"> Adicionar intervalos
+            </label>
+
+            <div class="start">
+                <button class="btnStart">Iniciar</button>
+            </div>
+
+            <div class="optionsIntervals">
+                <ul>
+                    <li><label>a cada:</label></li>
+                    <li><input type="number" placeholder="Minutos"></li>
+                    <li><label>Intervalos de:</label></li>
+                    <li><input type="number" placeholder="Minutos"></li>
+                    <li><button>Aplicar</button></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

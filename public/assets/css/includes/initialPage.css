@@ -1,0 +1,386 @@
+#pageIndex #container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #E1BEE7;
+}
+
+#container #check {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .optionsBar {
+    transform: translateX(13rem);
+    box-shadow: 2.5rem 0 1.87px rgba(0, 0, 0, 0.25);
+}
+
+#container #options {
+    position: absolute;
+    padding: 1rem;
+    z-index: 2;
+
+    cursor: pointer;
+}
+
+#container .optionsBar {
+    width: 13rem;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: -13rem;
+
+    /* background-color: #85598b; */
+    background-color: #8E24AA;
+
+    border-radius: 0 0.62rem 0.62rem 0;
+    transition: all 0.5s;
+}
+
+#container .optionsBar ul {
+    margin-top: 4.5rem;
+}
+
+#container .optionsBar ul li {
+    width: 100%;
+    height: 2.5rem;
+
+    display: flex;
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+#container .optionsBar ul li:hover {
+    background-color: #80189c
+}
+
+#container .optionsBar a {
+    font: 500 1.25rem Archivo;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#container .optionsBar a img {
+    width: 1.12rem;
+    height: 1.12rem;
+    margin: 0 10px 0;
+}
+
+#container .initialLanding {
+    position: relative;
+    top: 3rem;
+}
+
+#container .initialLanding h1 {
+    font: 500 2.5rem Archivo;
+    color: #3F0A4E;
+
+    padding: 0 0 0 4.5rem;
+}
+
+#container .initialLanding .btn {
+    width: 100%;
+    height: 7rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container .initialLanding .timeInput {
+    margin-top: 3rem;
+}
+
+#container .initialLanding .timeInput input {
+    width: 10.31rem;
+    height: 2.68rem;
+
+    border: none;
+    border-radius: 0.62rem;
+    box-shadow: 0px 0.62rem 1.25rem rgba(0, 0, 0, 0.25);
+    outline: none;
+
+    font: 500 1.25rem Archivo;
+    color: #3F0A4E;
+    padding: 0 0 0 1rem;
+}
+
+#container .initialLanding .timeInput input::placeholder {
+    color: #918c92;
+    font-size: 1rem;
+}
+
+#container .initialLanding .line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 1rem 0 1rem;
+}
+
+#container .initialLanding .freeTime button {
+    width: 10.31rem;
+    height: 2.68rem;
+
+    border: none;
+    border-radius: 0.62rem;
+    box-shadow: 0px 0.62rem 1.25rem rgba(0, 0, 0, 0.25);
+    outline: none;
+
+    background-color: #B88DBF;
+
+    font: 500 1.25rem Archivo;
+    color: #ffffff;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#container .initialLanding .freeTime button:hover {
+    background-color: #af83b6;
+}
+
+#container .initialLanding .freeTime button:focus {
+    background-color: #ae71b8;
+}
+
+#container .initialLanding .labelIntervals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font: 500 1rem Archivo;
+    color: #3F0A4E;
+
+    margin-top: 3rem;
+}
+
+#container .initialLanding input[type="checkbox"] {
+    display: none;
+}
+
+#container .initialLanding .labelIntervals {
+    cursor: pointer;
+}
+
+#container .initialLanding .start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 1rem;
+}
+
+#container .initialLanding .start button {
+    width: 10.312rem;
+    height: 3.625rem;
+
+    border-radius: 0.625rem;
+    border: none;
+
+    background-color: #8E24AA;
+
+    font: 600 1.56rem Archivo;
+    color: #ffffff;
+    text-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+
+    outline: none;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#container .initialLanding .start button:hover {
+    background-color: #831f9e;
+}
+
+#container .initialLanding .start button:focus {
+    background-color: #6c1983;
+}
+
+#container .initialLanding .optionsIntervals {
+    width: 60%;
+    height: 25rem;
+    top: 8rem;
+
+    position: absolute;
+
+    background: linear-gradient(to left, #E1BEE7, #FFFFFF);
+    border-radius: 0 1.25rem 1.25rem 0;
+
+    z-index: 1;
+    left: -18.75rem;
+
+    transition: 0.2s;
+}
+
+#container .initialLanding .optionsIntervals ul {
+    margin-top: 1.25rem;
+}
+
+#container .initialLanding .optionsIntervals li {
+    list-style-type: none;
+}
+
+#container .initialLanding .optionsIntervals label {
+    padding: 0 0 0 1.87rem;
+
+    font: 400 1.5rem Archivo;
+    color: #3F0A4E;
+}
+
+#container .initialLanding .optionsIntervals input {
+    margin: 3.12rem;
+
+    width: 10.31rem;
+    height: 2.68rem;
+
+    border: none;
+    border-radius: 0.62rem;
+    box-shadow: 0px 0.62rem 1.25rem rgba(0, 0, 0, 0.25);
+    outline: none;
+
+    font: 500 1.25rem Archivo;
+    color: #3F0A4E;
+    padding: 0 0 0 1rem;
+}
+
+#container .initialLanding .optionsIntervals ul button {
+    width: 5rem;
+    height: 2rem;
+
+    display: flex;
+    margin: 0 0 0 6.87rem;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0.3rem;
+    border: none;
+
+    background-color: #8E24AA;
+
+    font: 600 0.81rem Archivo;
+    color: #ffffff;
+    text-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+
+    outline: none;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#container .initialLanding input[type="checkbox"]:checked ~ .optionsIntervals {
+    left: 0px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+@media (min-width: 1000px) {
+    #pageIndex #container {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas:
+        "bar index intervals";
+    }
+
+    #container .optionsBar {
+        grid-area: bar;
+        left: 0;
+        
+        width: 300px;
+        height: 100%;
+
+        border-radius: 0;
+
+    }
+
+    #check, #options {
+        display: none;
+    }
+
+    #container .optionsBar ul {
+        margin-top: 32px;
+    }
+
+    #container .initialLanding {
+        grid-area: index;
+        width: 70%;
+        top: 0;
+    }
+
+    #container .optionsBar {
+        z-index: 1;
+    }
+
+    #container .initialLanding h1 {
+        width: 500px;
+        margin-top: 40px;
+        padding: 0 0 0 100px;
+
+        font: 500 50px Archivo;
+    }
+
+    #container .initialLanding .btn {
+        display: flex;
+        justify-content: left;
+
+        padding: 0 0 0 100px;
+    }
+
+    #container .initialLanding .line {
+        display: flex;
+        justify-content: left;
+
+        padding: 0 0 0 175px;
+    }
+
+    #container .initialLanding .optionsIntervals {
+        top: -475.55px;
+        left: 500px;
+        border-radius: 0 0 25px 25px;
+
+        background: linear-gradient(180deg, #E1BEE7 0%, #FFFFFF 100%);
+    }
+
+    #container .initialLanding input[type="checkbox"]:checked ~ .optionsIntervals {
+        top: 0px;
+        left: 500px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    #container .initialLanding .optionsIntervals ul {
+        padding: 0 0 0 50px;
+    }
+
+    #container .initialLanding .timeInput input{
+        width: 250px;
+        height: 67px;
+    }
+
+    #container .initialLanding .timeInput input::placeholder {
+        font: 400 1rem Archivo;
+    }
+
+
+    #container .initialLanding .freeTime button {
+        width: 250px;
+        height: 67px;
+    }
+
+    #container .initialLanding .labelIntervals {
+        display: flex;
+        justify-content: center;
+
+        width: 450px;
+    }
+
+    #container .initialLanding .start {
+        display: flex;
+        justify-content: left;
+
+        padding: 40px 0 0 142.5px;
+    }
+
+}
+
+

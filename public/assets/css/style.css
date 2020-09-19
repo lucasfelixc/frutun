@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #783FD6, #2A016C);
+    font-family: 'Archivo', sans-serif;
+}
+
+#container {
+    width: 100vw;
+    /* max-width: 700px; */
+}
