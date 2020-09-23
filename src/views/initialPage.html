@@ -7,61 +7,93 @@
 
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/includes/initialPage.css">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body id="pageIndex">
 
     <div id="container">
-        <!-- <a href="/"><img src="/images/align-justify.svg" alt="Opções"></a> -->
-        <input type="checkbox" id="check">
-        <label for="check" id="options">
-            <img src="/images/align-justify.svg" alt="Opções">
-        </label>
+        <header>
+            <div class="logo">
+                <img src="/images/frutun.svg" alt="Logo frutun">
+            </div>
 
-        <div class="optionsBar">
+            <div class="menuToggle">
+                <div class="alin">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+            </div>
+
             <ul>
-                <li><a href="./initialPage.html"><img src="/images/clock.svg" alt="Relógio">Temporizador</a></li>
-                <li><a href="/"><img src="/images/server.svg" alt="Histórico">Histórico</a></li>
-            </ul>
-        </div>
-        
-        <div class="initialLanding">
-            <h1>Defina algumas preferências</h1>
+                <li class="clock">
+                    <img src="/images/clock.svg" alt="Temporizador">
+                </li>
+                <li class="historic">
+                    <img src="/images/server.svg" alt="Histórico">
+                </li>
+                <li class="perfil">
+                    <img src="/images/user.svg" alt="Perfil">
+                </li>
+            <ul>
+        </header>
 
-            <div class="btn timeInput">
-                <input type="number" name="time" id="" placeholder="Minutos">
+        <main>
+            <div class="clock">
+                <div class="tittle">
+                    <h1>Defina algumas preferências</h1>
+                </div>
+
+                <div class="minutes">
+                    <input class="inputMinutes" type="text" placeholder="Minutos">
+                </div>
+
+                <div class="spaceFreeTime">
+                    <button class="freeTime">Tempo livre</button>
+                </div>
+
+                <div class="adcIntervals">
+                    <label id="linkIntervals"><img src="/images/plus.svg" alt="Adicionar intervalos">Adicionar intervalos</label>
+                </div>
+
+                <div class="buttonStart">
+                    <button class="start">Iniciar</button>
+                </div>
             </div>
 
-            <div class="line">
-                <img src="/images/line.svg" alt="linha">
+            <div class="intervals">
+                <div class="content">
+                    <div class="boxExit">
+                        <div class="exit">
+                            <img src="/images/x.svg" alt="Fechar">
+                        </div>
+                    </div>
+
+                    <div class="lab">
+                        A cada:
+                    </div>
+
+                    <div class="inpt">
+                        <input type="text" placeholder="Minutos">
+                    </div>
+
+                    <div class="lab">
+                        Intervalos de:
+                    </div>
+
+                    <div class="inpt">
+                        <input type="text" placeholder="Minutos">
+                    </div>
+
+                    <div class="send">
+                        <button class="toApply">Aplicar</button>
+                    </div>
+                </div>
+                
             </div>
-
-            <div class="btn freeTime">
-                <button class="freeTime">Tempo livre</button>
-            </div>
-
-            <input type="checkbox" id="intervals">
-            <label class="labelIntervals" for="intervals">
-                <img src="/images/plus.svg" alt="Plus"> Adicionar intervalos
-            </label>
-
-            <div class="start">
-                <button class="btnStart">Iniciar</button>
-            </div>
-
-            <div class="optionsIntervals">
-                <ul>
-                    <li><label>a cada:</label></li>
-                    <li><input type="number" placeholder="Minutos"></li>
-                    <li><label>Intervalos de:</label></li>
-                    <li><input type="number" placeholder="Minutos"></li>
-                    <li><button>Aplicar</button></li>
-                </ul>
-            </div>
-        </div>
-
+        </main>
     </div>
     
+    <script src="/frontend/initialPage/addIntervals.js"></script>
 </body>
 </html>

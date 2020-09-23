@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,11 +28,14 @@
                     </div>
 
                     <div>
-                        <input type="text" class="password" placeholder="Senha">
+                        <input type="password" class="password" placeholder="Senha">
                     </div>
 
                     <div>
-                        <input type="text" class="confirmPassword" placeholder="Confirme a senha">
+                        <input type="password" class="passwordTwo" placeholder="Confirme a senha">
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="showPassword"><label class="show" for="showPassword">Mostrar senha</label>
                     </div>
 
                     <a type="submit" href="/">Registrar</a>
@@ -41,6 +44,7 @@
         </main>
         
     </div>
-    
+
+    <script src="/frontend/registerPage.js"></script>
 </body>
 </html>

@@ -32,7 +32,7 @@
     height: 100%;
 }
 
-.pageRegister #formRegister input {
+.pageRegister #formRegister .user, .email, .password, .passwordTwo {
     display: block;
     margin: 20px auto;
     width: 67.77%;
@@ -56,9 +56,19 @@
 }
 
 .pageRegister #formRegister .user:focus-within, .pageRegister #formRegister .password:focus-within,
-.pageRegister #formRegister .email:focus-within, .pageRegister #formRegister .confirmPassword:focus-within{
+.pageRegister #formRegister .email:focus-within, .pageRegister #formRegister .passwordTwo:focus-within{
     outline: none;
     width: 70%;
+}
+
+.pageRegister #formRegister .check {
+    width: 67.77%;
+    max-width: 25rem;
+    margin: 0 auto;
+}
+
+#formRegister .check .show {
+    margin: 0 0 0 1rem;
 }
 
 #formRegister a {
@@ -74,7 +84,7 @@
 
     justify-content: center;
     align-items: center;
-    margin: 3rem auto 0rem;
+    margin: 2rem auto 0rem;
 
     background-color: #783FD6;
     color: #ffffff;
